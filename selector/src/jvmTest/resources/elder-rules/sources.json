@@ -1,0 +1,45 @@
+{
+  "usage": "Public historic snapshots for local selector verification only; not copied into APK assets. No user phone data.",
+  "archive_mapping_document": "https://github.com/gkd-kit/inspect/blob/main/gkd-inspect/src/entities/snapshot/urls.ts",
+  "fixtures": [
+    {
+      "import_id": 12750090,
+      "app": "com.sina.weibo",
+      "activity": "com.sina.weibo.business.x",
+      "app_version": "13.9.4",
+      "node_count": 11,
+      "local_file": "12750090.json",
+      "download_url": "https://github.com/gkd-kit/inspect/files/12750090/file.zip",
+      "upstream_reference": "https://i.gkd.li/import/12750090",
+      "source": "ganlinte",
+      "subscription_id": 233,
+      "group_key": 8,
+      "rule_key": 0,
+      "selector": "@[id=\"com.sina.weibo:id/btn_close\"] - FrameLayout > [id=\"com.sina.weibo:id/ad_tag\"]",
+      "expected_target_node_id": 6,
+      "expected_target_view_id": "com.sina.weibo:id/btn_close",
+      "note": "Public historic rule-author snapshot; activity prefix matching is intentional.",
+      "selector_license": "MIT, Copyright (c) 2024 ganlinte; see ganlinte-LICENSE.txt",
+      "snapshot_license_note": "Public rule-author attachment, no separate snapshot license stated; local regression fixture, not app assets."
+    },
+    {
+      "import_id": 12769137,
+      "app": "com.ss.android.ugc.aweme",
+      "activity": "com.android.launcher.Launcher",
+      "app_version": "27.2.0",
+      "node_count": 15,
+      "local_file": "12769137.json",
+      "download_url": "https://github.com/user-attachments/files/12769137/file.zip",
+      "upstream_reference": "https://i.gkd.li/import/12769137",
+      "source": "ganlinte",
+      "subscription_id": 233,
+      "group_key": 5,
+      "selector": "[id=\"android:id/content\"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text=\"广告\"][id!=null]",
+      "expected_target_node_id": 11,
+      "expected_target_view_id": "com.ss.android.ugc.aweme:id/kgf",
+      "note": "Public historic rule-author snapshot; activityId is launcher but appId is Douyin, no activity restriction on this source group.",
+      "selector_license": "MIT, Copyright (c) 2024 ganlinte; see ganlinte-LICENSE.txt",
+      "snapshot_license_note": "Public rule-author attachment, no separate snapshot license stated; local regression fixture, not app assets."
+    }
+  ]
+}

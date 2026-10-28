@@ -1,0 +1,83 @@
+{
+  "checked_date": "2026-10-18",
+  "sources": [
+    {
+      "key": "easyrescue",
+      "origin": "local",
+      "license": "GPL-3.0-only",
+      "subscription_id": 2026101801,
+      "version": 4,
+      "app_count": 5,
+      "app_group_count": 5,
+      "global_group_count": 0,
+      "asset": "easyrescue/easyrescue.json5",
+      "update_url_configured": true,
+      "source_url": "https://raw.githubusercontent.com/Jerryx64/EasyRescue/main/app/src/main/assets/elder_rules/easyrescue/easyrescue.json5",
+      "note": "Local WingPay, Douban, 5EPlay and Tencent Meeting splash adaptations; Douban 7.136.0, 5EPlay 7.3.0 and Tencent Meeting 3.47.10.471 layouts captured on Redmi K70 Pro / Android 16 on 2026-10-28. Douyin popup from ganlinte (MIT), two scoped 400701 ByteDance SDK selectors from aoguai (GPL-3.0), still not verified on served ads; 400801 completed-ad back rule automatically verified on one miniapp reward-ad entry on Redmi K70 Pro / Android 16 / Douyin 40.8.0 on 2026-10-21; paid-episode unlock, automatic drama resume, other miniapps and live ads remain unverified; no private phone page data bundled"
+    },
+    {
+      "key": "ganlinte",
+      "repository": "ganlinte/GKD-subscription",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-10-01T03:31:34Z",
+      "source_commit": "4746d192b4c57a4b62ed92a7f5deaf79e64fa811",
+      "source_date": "2026-09-24T07:52:01Z",
+      "source_url": "https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5",
+      "snapshot_url": "https://raw.githubusercontent.com/ganlinte/GKD-subscription/4746d192b4c57a4b62ed92a7f5deaf79e64fa811/dist/ganlin_gkd.json5",
+      "subscription_id": 233,
+      "version": 72,
+      "app_count": 610,
+      "app_group_count": 1389,
+      "global_group_count": 3,
+      "bytes": 609706,
+      "asset": "ganlinte/ganlin_gkd.json5"
+    },
+    {
+      "key": "aoguai",
+      "repository": "aoguai/subscription",
+      "branch": "custom",
+      "license": "GPL-3.0",
+      "archived": false,
+      "pushed_at": "2026-09-26T09:01:08Z",
+      "source_commit": "e0ad57290fed632e7305f67f92fcca8e775fb825",
+      "source_date": "2026-09-26T08:58:38Z",
+      "source_url": "https://raw.githubusercontent.com/aoguai/subscription/custom/dist/aoguai_gkd.json5",
+      "snapshot_url": "https://raw.githubusercontent.com/aoguai/subscription/e0ad57290fed632e7305f67f92fcca8e775fb825/dist/aoguai_gkd.json5",
+      "subscription_id": 86,
+      "version": 89,
+      "app_count": 72,
+      "app_group_count": 280,
+      "global_group_count": 9,
+      "bytes": 330121,
+      "asset": "aoguai/aoguai_gkd.json5"
+    },
+    {
+      "key": "zhtdbobo",
+      "repository": "zhtdbobo/gkd-subscription",
+      "branch": "master",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-07-14T17:05:11Z",
+      "source_commit": "3be084a0bd03d729d4aa2bd99fb84b6372e73e2c",
+      "source_date": "2026-07-14T17:04:49Z",
+      "source_url": "https://raw.githubusercontent.com/zhtdbobo/gkd-subscription/master/dist/zhtdbobo_gkd.json5",
+      "snapshot_url": "https://raw.githubusercontent.com/zhtdbobo/gkd-subscription/3be084a0bd03d729d4aa2bd99fb84b6372e73e2c/dist/zhtdbobo_gkd.json5",
+      "subscription_id": 0,
+      "version": 3,
+      "app_count": 615,
+      "app_group_count": 1380,
+      "global_group_count": 1,
+      "bytes": 564223,
+      "asset": "zhtdbobo/zhtdbobo_gkd.json5"
+    }
+  ],
+  "not_redistributed": [
+    {
+      "repository": "Lin-arm/GKD_subscription",
+      "reason": "No LICENSE found in recursive repository tree; GitHub license=null; README restricts propagation. Not eligible for bundled redistribution.",
+      "pushed_at": "2026-10-16T21:27:24Z"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Local adaptations and scoped upstream selectors; no user page data is bundled.
+{
+  id: 2026101801,
+  name: '安心用补充规则',
+  version: 4,
+  apps: [
+    {
+      id: 'com.chinatelecom.bestpayclient',
+      name: '翼支付',
+      groups: [
+        {
+          key: 0,
+          name: '开屏广告-启动页',
+          desc: '仅点击启动页可点击的跳过节点，每次打开应用最多一次',
+          fastQuery: true,
+          matchTime: 10000,
+          resetMatch: 'app',
+          actionMaximum: 1,
+          activityIds: 'com.chinatelecom.bestpayclient.ui.MainActivity',
+          rules: [
+            {
+              matches: '[id="com.chinatelecom.bestpayclient:id/tv_ad_skip"][text^="跳过"][clickable=true]',
+              action: 'clickNode',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'com.douban.frodo',
+      name: '豆瓣',
+      groups: [
+        {
+          key: 0,
+          name: '开屏广告-自绘跳过按钮',
+          desc: '适配7.135.1及7.136.0全屏自绘跳过控件，校验广告标记，每次打开最多一次',
+          fastQuery: true,
+          matchRoot: true,
+          matchTime: 10000,
+          forcedTime: 10000,
+          resetMatch: 'app',
+          actionMaximum: 1,
+          activityIds: 'com.douban.frodo.activity.SplashActivity',
+          rules: [
+            {
+              versionCode: { include: [364, 365] },
+              matches: '@[id="com.douban.frodo:id/skip"][visibleToUser=true][clickable=false][childCount=0][left=0][top=0][width=parent.width][height=parent.height][height>width] < [id="com.douban.frodo:id/ad_parent"] > [id="com.douban.frodo:id/ad_mark"][text="广告"][visibleToUser=true]',
+              action: 'clickCenter',
+              // shortcut: 7.135.1 and 7.136.0 draw the button inside a full-screen node; recalibrate for a new layout/version.
+              position: { right: 'width * 0.12', top: 'width * 0.142' },
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'com.fiveplay',
+      name: '5EPlay',
+      groups: [
+        {
+          key: 0,
+          name: '开屏广告-专用跳过控件',
+          desc: '仅点击开屏广告跳过容器，每次打开最多一次',
+          fastQuery: true,
+          matchRoot: true,
+          matchTime: 10000,
+          forcedTime: 10000,
+          resetMatch: 'app',
+          actionMaximum: 1,
+          activityIds: 'com.fiveplay.sihp_homepage.module.main.Main2Activity',
+          rules: [
+            {
+              matches: '@[id="com.fiveplay:id/cj_splash_skip_ll"][clickable=true][visibleToUser=true] > [id="com.fiveplay:id/cj_splash_skip_text"][text^="跳过"][visibleToUser=true]',
+              action: 'clickNode',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'com.tencent.wemeet.app',
+      name: '腾讯会议',
+      groups: [
+        {
+          key: 0,
+          name: '开屏广告-互动广告跳过',
+          desc: '仅点击开屏广告顶部容器内的跳过按钮，每次打开最多一次',
+          fastQuery: true,
+          matchRoot: true,
+          matchTime: 10000,
+          forcedTime: 10000,
+          resetMatch: 'app',
+          actionMaximum: 1,
+          activityIds: 'com.tencent.wemeet.sdk.meeting.premeeting.home.HomeActivity',
+          rules: [
+            {
+              matches: '[id="com.tencent.wemeet.app:id/splashAmsLayout"] > [id="com.tencent.wemeet.app:id/adTopLayout"] > [id="com.tencent.wemeet.app:id/skipLayout"] > [text="跳过"][clickable=true][visibleToUser=true]',
+              action: 'clickNode',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'com.ss.android.ugc.aweme',
+      name: '抖音',
+      groups: [
+        {
+          key: 0,
+          name: '全屏广告-广告弹窗与小程序广告',
+          desc: '保留原广告弹窗，补充指定版本小程序广告关闭',
+          rules: [
+            {
+              key: 0,
+              // ganlinte/GKD-subscription app group 5 (MIT); see ../ganlinte/LICENSE.
+              fastQuery: true,
+              matches: '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
+              snapshotUrls: 'https://i.gkd.li/import/12769137',
+            },
+            // aoguai/subscription global group 1, rules 4 and 5 (GPL-3.0); see ../aoguai/LICENSE.
+            // shortcut: SDK selectors are not verified on served ads; recalibrate after app version or miniapp page changes.
+            {
+              key: 1,
+              name: '字节SDK-类型1',
+              activityIds: 'com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity0',
+              versionCode: { include: [400701] },
+              matches: '[id~="(?is).*tt_reward_full_count_down_after_close"][name!$=".CheckBox"][name!$=".EditText"][name!$=".ProgressBar"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0]',
+            },
+            {
+              key: 2,
+              name: '字节SDK-类型2',
+              activityIds: 'com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity0',
+              versionCode: { include: [400701] },
+              matches: '[vid~="(?is).*ad_flag_source_layout"] + [vid~="(?is).*iv_close"][name!$=".CheckBox"][name!$=".EditText"][name!$=".ProgressBar"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0]',
+            },
+            {
+              key: 3,
+              name: '40.8.0小程序广告完成后返回',
+              activityIds: 'com.tt.miniapphost.placeholder.MiniAppChildProcessMultiInsActivity0',
+              versionCode: { include: [400801] },
+              matchRoot: true,
+              action: 'back',
+              actionCd: 3000,
+              actionDelay: 300,
+              // shortcut: only the 40.8.0 ad container and completed description were observed; retest after version or layout changes.
+              matches: '[desc="领取成功，关闭，按钮"][name="android.view.ViewGroup"][childCount=1] <<n @[id="com.ss.android.ugc.aweme:id/ir-"][visibleToUser=true][left=0][top=0][width=parent.width][height=parent.height]',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}

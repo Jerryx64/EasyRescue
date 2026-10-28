@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "pid": -1,
+      "attr": {
+        "id": "com.tencent.wemeet.app:id/splashAmsLayout",
+        "vid": "splashAmsLayout",
+        "name": "android.view.ViewGroup",
+        "text": null,
+        "clickable": false,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": 1,
+      "pid": 0,
+      "attr": {
+        "id": "com.tencent.wemeet.app:id/adTopLayout",
+        "vid": "adTopLayout",
+        "name": "android.view.ViewGroup",
+        "text": null,
+        "clickable": false,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 399,
+        "childCount": 3,
+        "index": 1
+      }
+    },
+    {
+      "id": 2,
+      "pid": 1,
+      "attr": {
+        "id": "com.tencent.wemeet.app:id/skipLayout",
+        "vid": "skipLayout",
+        "name": "android.view.ViewGroup",
+        "text": null,
+        "clickable": false,
+        "visibleToUser": true,
+        "left": 1237,
+        "top": 189,
+        "width": 168,
+        "height": 112,
+        "childCount": 1,
+        "index": 2
+      }
+    },
+    {
+      "id": 3,
+      "pid": 2,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.widget.TextView",
+        "text": "跳过",
+        "clickable": true,
+        "visibleToUser": true,
+        "left": 1237,
+        "top": 189,
+        "width": 168,
+        "height": 112,
+        "childCount": 0,
+        "index": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "pid": -1,
+      "attr": {
+        "id": "com.ss.android.ugc.aweme:id/npe",
+        "vid": "npe",
+        "name": "android.widget.FrameLayout",
+        "desc": null,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": 151,
+      "pid": 0,
+      "attr": {
+        "id": "com.ss.android.ugc.aweme:id/ir-",
+        "vid": "ir-",
+        "name": "android.widget.FrameLayout",
+        "desc": null,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 1,
+        "index": 1
+      }
+    },
+    {
+      "id": 152,
+      "pid": 151,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.widget.FrameLayout",
+        "desc": null,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": 153,
+      "pid": 152,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.widget.FrameLayout",
+        "desc": null,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": 154,
+      "pid": 153,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.widget.FrameLayout",
+        "desc": null,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3200,
+        "childCount": 4,
+        "index": 0
+      }
+    },
+    {
+      "id": 195,
+      "pid": 154,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.view.ViewGroup",
+        "desc": null,
+        "visibleToUser": false,
+        "left": 0,
+        "top": 140,
+        "width": 1440,
+        "height": 0,
+        "childCount": 1,
+        "index": 2
+      }
+    },
+    {
+      "id": 196,
+      "pid": 195,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.view.ViewGroup",
+        "desc": null,
+        "visibleToUser": false,
+        "left": 0,
+        "top": 140,
+        "width": 1440,
+        "height": 0,
+        "childCount": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": 200,
+      "pid": 196,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.view.ViewGroup",
+        "desc": null,
+        "visibleToUser": false,
+        "left": 890,
+        "top": 140,
+        "width": 494,
+        "height": 0,
+        "childCount": 1,
+        "index": 1
+      }
+    },
+    {
+      "id": 201,
+      "pid": 200,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.view.ViewGroup",
+        "desc": null,
+        "visibleToUser": false,
+        "left": 890,
+        "top": 140,
+        "width": 494,
+        "height": 0,
+        "childCount": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": 203,
+      "pid": 201,
+      "attr": {
+        "id": null,
+        "vid": null,
+        "name": "android.view.ViewGroup",
+        "desc": "领取成功，关闭，按钮",
+        "visibleToUser": false,
+        "left": 1086,
+        "top": 140,
+        "width": 298,
+        "height": 0,
+        "childCount": 1,
+        "index": 1
+      }
+    }
+  ]
+}

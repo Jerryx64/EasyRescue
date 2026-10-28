@@ -1,0 +1,20 @@
+安心返回 0.4 修改与许可说明
+修改日期：2026-10-18
+
+本应用是 GKD v1.12.1 的修改版本，不是 GKD 官方发行版。
+上游：https://github.com/gkd-kit/gkd
+上游提交：5a00f844989471458e4cf4601acb3f4710438f9a
+上游 GPL-3.0-only 许可证全文保留在 LICENSE 和安装包 assets/licenses/GKD-GPL-3.0.txt。
+本修改版本同样按 GPL-3.0-only 提供；对应完整修改源码与构建说明随 APK 一并提供。
+
+修改涉及：
+- 大字简洁主页、条件救援按钮、快应用退出、下拉备用入口。
+- ElderRules/ElderRuleDefaults 完整订阅初始化、广告默认设置和更新。
+- A11yService 生命周期 hooks 与 A11yRuleEngine 暂停及广告持续观察 hooks。
+- 包名、版本、品牌、入口和原版应用更新通道。
+- 广告规则与真实历史快照的解析、查询及反例检查。
+
+完整 GKD 选择器、动作执行、多步前置、Activity 范围、冷却与次数机制保留。
+三份社区规则的原文、来源、固定提交和各自许可见 assets/elder_rules/sources.json 及各来源目录。
+公开历史快照的来源与许可见 selector/src/jvmTest/resources/elder-rules/sources.json。
+不包含任何用户手机的截图或页面数据。

@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "pid": -1,
+      "attr": {
+        "id": "com.fiveplay:id/root_view",
+        "vid": "root_view",
+        "name": "android.view.ViewGroup",
+        "text": null,
+        "clickable": true,
+        "visibleToUser": true,
+        "left": 0,
+        "top": 0,
+        "width": 1440,
+        "height": 3144,
+        "childCount": 7,
+        "index": 1
+      }
+    },
+    {
+      "id": 1,
+      "pid": 0,
+      "attr": {
+        "id": "com.fiveplay:id/cj_splash_skip_ll",
+        "vid": "cj_splash_skip_ll",
+        "name": "android.widget.LinearLayout",
+        "text": null,
+        "clickable": true,
+        "visibleToUser": true,
+        "left": 105,
+        "top": 2441,
+        "width": 271,
+        "height": 111,
+        "childCount": 1,
+        "index": 3
+      }
+    },
+    {
+      "id": 2,
+      "pid": 1,
+      "attr": {
+        "id": "com.fiveplay:id/cj_splash_skip_text",
+        "vid": "cj_splash_skip_text",
+        "name": "android.widget.TextView",
+        "text": "跳过｜4",
+        "clickable": false,
+        "visibleToUser": true,
+        "left": 140,
+        "top": 2459,
+        "width": 201,
+        "height": 75,
+        "childCount": 0,
+        "index": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "packageName": "com.easyrescue.app",
+  "versionCode": 6,
+  "versionName": "0.6.0-gkd1.12.1",
+  "downloadUrl": "./downloads/easyrescue-0.6.0.apk",
+  "changelog": "这是现有原签名的 0.6.0 发行包。0.6.2 已完成源码与构建，仍在等待原签名密钥迁移，尚未作为正式覆盖升级发布。0.6.0 不包含新的系统设置入口和版本检查功能。"
+}
