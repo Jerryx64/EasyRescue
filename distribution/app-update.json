@@ -1,7 +1,7 @@
 {
   "packageName": "com.easyrescue.app",
-  "versionCode": 6,
-  "versionName": "0.6.0-gkd1.12.1",
-  "downloadUrl": "./downloads/easyrescue-0.6.0.apk",
-  "changelog": "这是现有原签名的 0.6.0 发行包。0.6.2 已完成源码与构建，仍在等待原签名密钥迁移，尚未作为正式覆盖升级发布。0.6.0 不包含新的系统设置入口和版本检查功能。"
+  "versionCode": 8,
+  "versionName": "0.6.2-gkd1.12.1",
+  "downloadUrl": "./downloads/easyrescue-0.6.2.apk",
+  "changelog": "新增系统广告通知、推荐设置和快应用管理入口；支持从安心用专用仓库更新广告规则和检查新版。保留原签名，可覆盖旧版安装并保留数据。系统开关需由家人在系统页面按需设置；安装后请确认首页显示正在保护。"
 }

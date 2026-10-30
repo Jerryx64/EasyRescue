@@ -6,7 +6,7 @@
 
 - 自建补充规则 v4，包括翼支付、豆瓣、5EPlay、腾讯会议开屏和抖音指定小程序广告完成状态。参与匹配不代表所有版本、广告布局都已验证；5EPlay 的另一套 AM 广告布局仍未覆盖。
 - 当前源码为 0.6.2 / versionCode 8，增加系统广告与快应用设置入口、自建源在线更新和新版检查。
-- 版本清单目前仅提供已保留原签名的 0.6.0 / versionCode 6；对应完整源码归档和许可与安装包一起提供。0.6.2 原签名尚未迁移，不把另一签名的测试构建当作覆盖升级包发布。
+- 版本清单提供原签名 0.6.2 / versionCode 8，可保留数据覆盖升级；[安装包](https://raw.githubusercontent.com/Jerryx64/EasyRescue/main/distribution/downloads/easyrescue-0.6.2.apk)和[完整对应源码](https://raw.githubusercontent.com/Jerryx64/EasyRescue/main/distribution/downloads/easyrescue-0.6.2-source.zip)一起提供，文件校验值见 `SHA256SUMS.txt`。原签名 0.6.0 及其源码保留供核对。
 - 已装 0.6.0 不会因仓库发布就自动获得新界面或新地址。需要同签名升级后，才能使用新增的内置联网入口。
 
 ## 家人使用
